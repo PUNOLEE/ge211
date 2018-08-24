@@ -21,7 +21,7 @@ var searchData=
   ['get_5ftitle',['get_title',['../classge211_1_1_window.html#afad9f246c18c65d1e261ace7e9b64f94',1,'ge211::Window']]],
   ['get_5fwindow',['get_window',['../classge211_1_1_abstract__game.html#a329a95db19556a21771dc45265095cee',1,'ge211::Abstract_game']]],
   ['green',['green',['../classge211_1_1_color.html#a44ea30a5cda49989970b04b8edc872e6',1,'ge211::Color']]],
-  ['ge211_20—_20a_20game_20engine_20for_20eecs_20211',['ge211 — a game engine for EECS 211',['../index.html',1,'']]],
+  ['ge211_20—_20a_20game_20engine_20for_20eecs_20211',['GE211 — a game engine for EECS 211',['../index.html',1,'']]],
   ['sprites',['sprites',['../namespacege211_1_1sprites.html',1,'ge211']]],
   ['time',['time',['../namespacege211_1_1time.html',1,'ge211']]]
 ];
