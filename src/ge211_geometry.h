@@ -110,7 +110,8 @@ Basic_dimensions<T> operator*(double s1, Basic_dimensions<T> d2)
 /// division. If the result components would be fractional, they are
 /// truncated.
 ///
-/// **Precondition**: `z` cannot be `0` if `T` is an integral type.
+/// \preconditions
+///  - `z` cannot be `0` if `T` is an integral type.
 template <class T,
           class = std::enable_if_t<!std::is_same<T, double>::value, void>>
 Basic_dimensions<T> operator/(Basic_dimensions<T> d1, T s2)
@@ -159,7 +160,8 @@ Basic_dimensions<T>& operator*=(Basic_dimensions<T>& d1, double s2)
 
 /// Succinct Basic_dimensions-scalar division.
 ///
-/// **Precondition**: `s2 != 0`
+/// \preconditions
+///  - `s2 != 0`
 template <class T>
 Basic_dimensions<T>& operator/=(Basic_dimensions<T>& d1, T s2)
 {
