@@ -9,22 +9,9 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(function() { init_search(); });
-/* @license-end */
-</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -37,21 +24,6 @@
    <div id="projectname">ge211
    </div>
   </td>
-   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.png"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Search" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
-          </span>
-        </div>
-</td>
  </tr>
  </tbody>
 </table>
@@ -63,23 +35,17 @@
 var searchBox = new SearchBox("searchBox", "search",false,'Search');
 /* @license-end */
 </script>
-</div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('functions_func.html','');});
-/* @license-end */
-</script>
-<div id="doc-content">
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -111,27 +77,558 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 : <a class="el" href="classge211_1_1events_1_1_key.html#a3537fd58fa24f6653f4f4379fbbbd15b">Key</a>
 </li>
 <li>antialias()
-: <a class="el" href="classge211_1_1sprites_1_1_text__sprite_1_1_builder.html#a7e9874f3e0e36293f3e20c175201436c">Text_sprite::Builder</a>
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite_1_1_builder.html#ac2d50f6fd929343e93b3e8639e05bf63">Text_sprite::Builder</a>
 </li>
 <li>as_text()
 : <a class="el" href="classge211_1_1events_1_1_key.html#a0fccc6a22afa07f575ade365343a794d">Key</a>
 </li>
-<li>attach_music()
-: <a class="el" href="classge211_1_1audio_1_1_mixer.html#a5e4ec9c6d45c070e1393e4618f9ef8b2">Mixer</a>
+</ul>
+
+
+<h3><a id="index_b"></a>- b -</h3><ul>
+<li>Basic_position()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__position.html#a445d51b50ef2c63e125e3f1720912d1d">Basic_position&lt; T &gt;</a>
 </li>
-<li>available_effect_channels()
-: <a class="el" href="classge211_1_1audio_1_1_mixer.html#abe0697d7a8c4384c2a8396e4f11fd7a1">Mixer</a>
+<li>between()
+: <a class="el" href="classge211_1_1_random.html#a808fbdef59773f1b4e91ab3c6498d597">Random</a>
+</li>
+<li>black()
+: <a class="el" href="classge211_1_1_color.html#a7648d9d985e6e5838e460eb66957dbee">Color</a>
+</li>
+<li>blue()
+: <a class="el" href="classge211_1_1_color.html#a2486e2536c47686cfb5118fb17441fa1">Color</a>
+</li>
+<li>bottom_left()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#a4072d34c87a891a7c4c380197b3e4029">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>bottom_right()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#a796975b0bdb36a276c45c321fce8f2ff">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>build()
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite_1_1_builder.html#a7f15a1776622346acd1f5f39a695931f">Text_sprite::Builder</a>
+</li>
+<li>Builder()
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite_1_1_builder.html#ace97c910673a7257eb7bcb577345c025">Text_sprite::Builder</a>
+</li>
+</ul>
+
+
+<h3><a id="index_c"></a>- c -</h3><ul>
+<li>center()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#add975c3f32bfa1ba0f85d913249b81d3">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>Circle_sprite()
+: <a class="el" href="classge211_1_1sprites_1_1_circle__sprite.html#a6818b378368d7cacb5b3fcc4b11c3ee0">Circle_sprite</a>
+</li>
+<li>Client_logic_error()
+: <a class="el" href="classge211_1_1exceptions_1_1_client__logic__error.html#a51707ab63ae43bf4adb210064c73f23c">Client_logic_error</a>
+</li>
+<li>code()
+: <a class="el" href="classge211_1_1events_1_1_key.html#a432fb7ffcc1364f573dcaa2513ea5b23">Key</a>
+</li>
+<li>Color()
+: <a class="el" href="classge211_1_1_color.html#ab042b957e56bff4e83fe694aeab5cfd2">Color</a>
+</li>
+<li>color()
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite_1_1_builder.html#aea287a592d688bcffaea6c6d28e9b0b0">Text_sprite::Builder</a>
+</li>
+<li>command()
+: <a class="el" href="classge211_1_1events_1_1_key.html#a4b0a1e594c9c76db8120d23941e2d5b0">Key</a>
+</li>
+<li>control()
+: <a class="el" href="classge211_1_1events_1_1_key.html#a665ff26825910f5ee05fb0fc789cedeb">Key</a>
+</li>
+</ul>
+
+
+<h3><a id="index_d"></a>- d -</h3><ul>
+<li>darken()
+: <a class="el" href="classge211_1_1_color.html#af8ed96b8c493dc358ded35dccea9b603">Color</a>
+, <a class="el" href="structge211_1_1_color_1_1_h_s_l_a.html#acd40dde2454a9767a9bdc63f2a35b0ef">Color::HSLA</a>
+</li>
+<li>desaturate()
+: <a class="el" href="classge211_1_1_color.html#a9b76bb37aced4f11b8f980b6ff6dbfdd">Color</a>
+, <a class="el" href="structge211_1_1_color_1_1_h_s_l_a.html#a04bf51bd47f2e33ce047695cb713941e">Color::HSLA</a>
+, <a class="el" href="structge211_1_1_color_1_1_h_s_v_a.html#ab86169e4baf7ba0c56f9454a6ce7d8f6">Color::HSVA</a>
+</li>
+<li>devalue()
+: <a class="el" href="structge211_1_1_color_1_1_h_s_v_a.html#a2908d8d6bbaf83ae9aab9064f166f83f">Color::HSVA</a>
+</li>
+<li>dimensions()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#a02d758bd035e1f2d8e63e0658301ec9a">Basic_rectangle&lt; T &gt;</a>
+, <a class="el" href="classge211_1_1sprites_1_1_sprite.html#a6762bafafeb5297921549e5c965369ef">Sprite</a>
+</li>
+<li>down()
+: <a class="el" href="classge211_1_1events_1_1_key.html#afbea227981bc3e2be29c3644bf8bb45b">Key</a>
+</li>
+<li>down_by()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__position.html#aaa8d6ba18afd1d5b800d190d7892dffb">Basic_position&lt; T &gt;</a>
+</li>
+<li>down_left_by()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__position.html#aff7e71d4b4b284f17ba733960cf10e9b">Basic_position&lt; T &gt;</a>
+</li>
+<li>down_right_by()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__position.html#aad4dcea66c2f707cc34f49314938729f">Basic_position&lt; T &gt;</a>
+</li>
+<li>draw()
+: <a class="el" href="classge211_1_1_abstract__game.html#a44518135e411e35374f252d1c7d44e3e">Abstract_game</a>
+</li>
+<li>Duration()
+: <a class="el" href="classge211_1_1time_1_1_duration.html#ae81d774e7f30c44b2f293e867e37f641">Duration</a>
+</li>
+</ul>
+
+
+<h3><a id="index_e"></a>- e -</h3><ul>
+<li>elapsed_time()
+: <a class="el" href="classge211_1_1time_1_1_pausable__timer.html#a5f090094679e4732d0a4e9b584490c61">Pausable_timer</a>
+, <a class="el" href="classge211_1_1time_1_1_timer.html#a5f090094679e4732d0a4e9b584490c61">Timer</a>
+</li>
+<li>empty()
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite.html#a644718bb2fb240de962dc3c9a1fdf0dc">Text_sprite</a>
+</li>
+</ul>
+
+
+<h3><a id="index_f"></a>- f -</h3><ul>
+<li>fade_in()
+: <a class="el" href="classge211_1_1_color.html#a4832bfb218f82ccf93b7e463595014c2">Color</a>
+, <a class="el" href="structge211_1_1_color_1_1_h_s_l_a.html#a6c6485e435249980b6cf63ef2005a306">Color::HSLA</a>
+, <a class="el" href="structge211_1_1_color_1_1_h_s_v_a.html#a1dfea5f87c91ca4815b5d572b3faf902">Color::HSVA</a>
+</li>
+<li>fade_out()
+: <a class="el" href="classge211_1_1_color.html#a010963da36a17354e9779725a14cf0aa">Color</a>
+, <a class="el" href="structge211_1_1_color_1_1_h_s_l_a.html#a0067b6e825a51795105d5d6d9f0b860a">Color::HSLA</a>
+, <a class="el" href="structge211_1_1_color_1_1_h_s_v_a.html#a01bf1e9cd16b36908163e3f8879b5589">Color::HSVA</a>
+</li>
+<li>flip_h()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a7bc37a15735b70f2c856dfd352831dc3">Transform</a>
+</li>
+<li>flip_v()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a010f5477405bb6114f2db3ff1cca530b">Transform</a>
+</li>
+<li>Font()
+: <a class="el" href="classge211_1_1_font.html#a9bc2331b89c9ddb884c1b4b1548830fd">Font</a>
+</li>
+<li>font()
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite_1_1_builder.html#a37e975bccdd9fcfa8113b0b6b005d21f">Text_sprite::Builder</a>
+</li>
+<li>from_bottom_left()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#ac105d47f6fc825cf7022823ad046e989">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>from_bottom_right()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#a643a8c88cd077cfe18fb8b19421bd8e2">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>from_center()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#a31ced67a538cc87d42f74810394fcb00">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>from_hsla()
+: <a class="el" href="classge211_1_1_color.html#aa21d28b1266b185884e00655fc5535eb">Color</a>
+</li>
+<li>from_hsva()
+: <a class="el" href="classge211_1_1_color.html#aac251affbe0a2cbc9a0322c1f70e09d1">Color</a>
+</li>
+<li>from_rgba()
+: <a class="el" href="classge211_1_1_color.html#a18b54b8ac213adcdf2c6659504858de7">Color</a>
+</li>
+<li>from_top_left()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#a0a9ce8f44d07ab35d28849b7a34eab16">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>from_top_right()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#a913943c4d0b9da4d11cb7db330d9c6a9">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>future()
+: <a class="el" href="classge211_1_1time_1_1_timer.html#af317822a23fe950c8ad07d8a51c5356d">Timer</a>
+</li>
+</ul>
+
+
+<h3><a id="index_g"></a>- g -</h3><ul>
+<li>get_dimensions()
+: <a class="el" href="classge211_1_1_window.html#a09c5dec391cfcb9e5fe3d2c649a62f3a">Window</a>
+</li>
+<li>get_flip_h()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a3b33a98b2b33d8db8e1618c54cfe0bf1">Transform</a>
+</li>
+<li>get_flip_v()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a51b8625fd43bb46cae6557987a8ad066">Transform</a>
+</li>
+<li>get_frame_rate()
+: <a class="el" href="classge211_1_1_abstract__game.html#a466ce6e917f4e2af12ccd7cd28406248">Abstract_game</a>
+</li>
+<li>get_frame_start_time()
+: <a class="el" href="classge211_1_1_abstract__game.html#a7329861f81db4c45ce52f459e665151d">Abstract_game</a>
+</li>
+<li>get_fullscreen()
+: <a class="el" href="classge211_1_1_window.html#ad7a580b2d5460cf2e38d4ed44d7e5dfc">Window</a>
+</li>
+<li>get_position()
+: <a class="el" href="classge211_1_1_window.html#a4b312e8c2184d9ade2366338007b9c5d">Window</a>
+</li>
+<li>get_prev_frame_length()
+: <a class="el" href="classge211_1_1_abstract__game.html#ae4657bfa0ca87d757f157ad96842e7c8">Abstract_game</a>
+</li>
+<li>get_random()
+: <a class="el" href="classge211_1_1_abstract__game.html#ae427d958ed5a0ae77c6a948650cca7bf">Abstract_game</a>
+</li>
+<li>get_resizeable()
+: <a class="el" href="classge211_1_1_window.html#ae99bf15da159c9f72f7793808e274abe">Window</a>
+</li>
+<li>get_rotation()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#adffa1ad8d79c5240ef5e8cfbeb3740c2">Transform</a>
+</li>
+<li>get_scale_x()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a4ca2455a444db708f034080cb3f912b4">Transform</a>
+</li>
+<li>get_scale_y()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#aa9d81c0938a1efc3491d50f0da4b04d6">Transform</a>
+</li>
+<li>get_title()
+: <a class="el" href="classge211_1_1_window.html#afad9f246c18c65d1e261ace7e9b64f94">Window</a>
+</li>
+<li>get_window()
+: <a class="el" href="classge211_1_1_abstract__game.html#a329a95db19556a21771dc45265095cee">Abstract_game</a>
+</li>
+<li>green()
+: <a class="el" href="classge211_1_1_color.html#a44ea30a5cda49989970b04b8edc872e6">Color</a>
+</li>
+</ul>
+
+
+<h3><a id="index_i"></a>- i -</h3><ul>
+<li>Image_sprite()
+: <a class="el" href="classge211_1_1sprites_1_1_image__sprite.html#aa3593efa0abe99a12a77689004897d2f">Image_sprite</a>
+</li>
+<li>initial_window_dimensions()
+: <a class="el" href="classge211_1_1_abstract__game.html#a184aaacf68bad060099912dc8d65c7df">Abstract_game</a>
+</li>
+<li>initial_window_title()
+: <a class="el" href="classge211_1_1_abstract__game.html#a5dd1fce58a747385e3372c62744933d7">Abstract_game</a>
+</li>
+<li>into()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__dimensions.html#a4482cc623a88e719a54fe0bcd7895d78">Basic_dimensions&lt; T &gt;</a>
+, <a class="el" href="structge211_1_1geometry_1_1_basic__position.html#a60953fcc0ab921278c0d1cc8bad10afb">Basic_position&lt; T &gt;</a>
+, <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#a5c9da901b7adfaedeaa3efd9d85bfe8d">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>inverse()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a7eac1df7fb0a653df029f93f5afbd80c">Transform</a>
+</li>
+<li>invert()
+: <a class="el" href="classge211_1_1_color.html#a5d002d4bbe0a39d82cda2c5530b06a08">Color</a>
+</li>
+<li>is_identity()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#ab7fcbe69b926da77c26f0a31c24c1957">Transform</a>
+</li>
+<li>is_paused()
+: <a class="el" href="classge211_1_1time_1_1_pausable__timer.html#aa3bde2742b0e5c8bb77370b03e3d1489">Pausable_timer</a>
+</li>
+<li>is_textual()
+: <a class="el" href="classge211_1_1events_1_1_key.html#aa1cc89b6c65b5df065af69b46e65d93f">Key</a>
+</li>
+</ul>
+
+
+<h3><a id="index_k"></a>- k -</h3><ul>
+<li>Key()
+: <a class="el" href="classge211_1_1events_1_1_key.html#af98ffb37bd7143548def867be8a309ca">Key</a>
+</li>
+</ul>
+
+
+<h3><a id="index_l"></a>- l -</h3><ul>
+<li>left()
+: <a class="el" href="classge211_1_1events_1_1_key.html#a3a0a6e653ec69469aa21e36331b22d38">Key</a>
+</li>
+<li>left_by()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__position.html#ab963a2f42582ad7adc23272e49134c17">Basic_position&lt; T &gt;</a>
+</li>
+<li>lighten()
+: <a class="el" href="structge211_1_1_color_1_1_h_s_l_a.html#ad76d198fe7100d97358ebd5ef391141d">Color::HSLA</a>
+, <a class="el" href="classge211_1_1_color.html#a8df23c51c5d8c3ea7b8141bc2d9804e8">Color</a>
+</li>
+</ul>
+
+
+<h3><a id="index_m"></a>- m -</h3><ul>
+<li>max_fullscreen_dimensions()
+: <a class="el" href="classge211_1_1_window.html#aedf66da787b722a5d21469f7165b3848">Window</a>
+</li>
+<li>max_window_dimensions()
+: <a class="el" href="classge211_1_1_window.html#a589d1ce9cd7771a77e0eb17c093d4e01">Window</a>
+</li>
+<li>medium_blue()
+: <a class="el" href="classge211_1_1_color.html#a11c694bd8eac93cc06d716c9a25903c3">Color</a>
+</li>
+<li>medium_cyan()
+: <a class="el" href="classge211_1_1_color.html#a6505fbe090255e5e8f064e7c7800c300">Color</a>
+</li>
+<li>medium_green()
+: <a class="el" href="classge211_1_1_color.html#a1e4ca0d412e6d4e9d15b52598235e513">Color</a>
+</li>
+<li>medium_magenta()
+: <a class="el" href="classge211_1_1_color.html#aad567ae0d6ff4df2db06d74e1467ea7c">Color</a>
+</li>
+<li>medium_red()
+: <a class="el" href="classge211_1_1_color.html#a2cd4e84a5cb9e0e02c83e97a26ff886f">Color</a>
+</li>
+<li>medium_yellow()
+: <a class="el" href="classge211_1_1_color.html#a6aa161dd6523a51cfb11de80966b33be">Color</a>
+</li>
+<li>message()
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite_1_1_builder.html#a3ab49dc5d1a0773fc50783906ff43a0f">Text_sprite::Builder</a>
+</li>
+</ul>
+
+
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>now()
+: <a class="el" href="classge211_1_1time_1_1_time__point.html#a7c555f4da9e434df398581e2218123ac">Time_point</a>
+</li>
+</ul>
+
+
+<h3><a id="index_o"></a>- o -</h3><ul>
+<li>on_frame()
+: <a class="el" href="classge211_1_1_abstract__game.html#a10f6c7fa1760b0e6ad3eb8a6b01b18cd">Abstract_game</a>
+</li>
+<li>on_key()
+: <a class="el" href="classge211_1_1_abstract__game.html#a9a5c9f0cf8036232e45bfa1c5430f9e6">Abstract_game</a>
+</li>
+<li>on_key_down()
+: <a class="el" href="classge211_1_1_abstract__game.html#ae85ce1a769627a2932a9aedcc9316fc5">Abstract_game</a>
+</li>
+<li>on_key_up()
+: <a class="el" href="classge211_1_1_abstract__game.html#aba6660414891120246d8b126a7b667fd">Abstract_game</a>
+</li>
+<li>on_mouse_down()
+: <a class="el" href="classge211_1_1_abstract__game.html#a6d88b5777c0a08fe261bc39c0694dd4f">Abstract_game</a>
+</li>
+<li>on_mouse_move()
+: <a class="el" href="classge211_1_1_abstract__game.html#aae80d0ae41edb758760e751670288f7c">Abstract_game</a>
+</li>
+<li>on_mouse_up()
+: <a class="el" href="classge211_1_1_abstract__game.html#a9d298a91552117b2f7680834632df961">Abstract_game</a>
+</li>
+<li>on_quit()
+: <a class="el" href="classge211_1_1_abstract__game.html#a405c726a817771b911ac102ac8388b3d">Abstract_game</a>
+</li>
+<li>on_start()
+: <a class="el" href="classge211_1_1_abstract__game.html#a6122f9c7efc34a6648754d435f0ed8c8">Abstract_game</a>
+</li>
+<li>operator*()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a6642d4e4be09b9b2bb5216e28103ecf0">Transform</a>
+</li>
+<li>operator&lt;&lt;()
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite_1_1_builder.html#a1bf6b39708704e756e85b62e1d3864cc">Text_sprite::Builder</a>
+</li>
+<li>other()
+: <a class="el" href="classge211_1_1events_1_1_key.html#ad7fff321c477ef13251f64d44aaa2ec6">Key</a>
+</li>
+</ul>
+
+
+<h3><a id="index_p"></a>- p -</h3><ul>
+<li>Pausable_timer()
+: <a class="el" href="classge211_1_1time_1_1_pausable__timer.html#a006c64f7acfc89d83341d6aeaf024c8f">Pausable_timer</a>
+</li>
+<li>pause()
+: <a class="el" href="classge211_1_1time_1_1_pausable__timer.html#ad0f8e0ffe96c73a880b949c13af7e40f">Pausable_timer</a>
+</li>
+<li>prepare()
+: <a class="el" href="classge211_1_1_abstract__game.html#adbe37dbca5786ecf29bb5ecdf057ccb0">Abstract_game</a>
+</li>
+</ul>
+
+
+<h3><a id="index_q"></a>- q -</h3><ul>
+<li>quit()
+: <a class="el" href="classge211_1_1_abstract__game.html#ad0eb736262d05c5af0143a5eadae67ca">Abstract_game</a>
+</li>
+</ul>
+
+
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>random_bool()
+: <a class="el" href="classge211_1_1_random.html#a24c34022698ab572faa24fb04a699b12">Random</a>
+</li>
+<li>recolor()
+: <a class="el" href="classge211_1_1sprites_1_1_circle__sprite.html#abc7bf693008a828fd7b68632ffbe4b7b">Circle_sprite</a>
+, <a class="el" href="classge211_1_1sprites_1_1_rectangle__sprite.html#abc7bf693008a828fd7b68632ffbe4b7b">Rectangle_sprite</a>
+</li>
+<li>reconfigure()
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite.html#afe7c024ae674fec2431b9d3eb9ad4173">Text_sprite</a>
+</li>
+<li>Rectangle_sprite()
+: <a class="el" href="classge211_1_1sprites_1_1_rectangle__sprite.html#a3dcff78c7d6a0d43fafa74b515395318">Rectangle_sprite</a>
+</li>
+<li>red()
+: <a class="el" href="classge211_1_1_color.html#ad55e70d57c9ddd1bb35b66a9b4d0c38d">Color</a>
+</li>
+<li>reset()
+: <a class="el" href="classge211_1_1sprites_1_1_multiplexed__sprite.html#ad20897c5c8bd47f5d4005989bead0e55">Multiplexed_sprite</a>
+, <a class="el" href="classge211_1_1time_1_1_pausable__timer.html#a591f6ffe6420dd8e563bffcde86a6810">Pausable_timer</a>
+, <a class="el" href="classge211_1_1time_1_1_timer.html#a591f6ffe6420dd8e563bffcde86a6810">Timer</a>
+</li>
+<li>revalue()
+: <a class="el" href="structge211_1_1_color_1_1_h_s_v_a.html#a7b70b4a11ebb50f3afc3b05c3cca2bc5">Color::HSVA</a>
+</li>
+<li>right()
+: <a class="el" href="classge211_1_1events_1_1_key.html#a666b8819a4b545fcf4312dabce7d0165">Key</a>
+</li>
+<li>right_by()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__position.html#ac40d312efb93197e66bb2f8397093553">Basic_position&lt; T &gt;</a>
+</li>
+<li>rotate_hue()
+: <a class="el" href="structge211_1_1_color_1_1_h_s_l_a.html#a2c23fb41d6bc78f2174ba6b4a9bf8ebc">Color::HSLA</a>
+, <a class="el" href="structge211_1_1_color_1_1_h_s_v_a.html#a06ee82c20df87c27eba7fe71e27a642b">Color::HSVA</a>
+, <a class="el" href="classge211_1_1_color.html#ab82e6d65a02213b5a08d5e5b1b2060af">Color</a>
+</li>
+<li>rotation()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a8f3469a63f100dcc87fb2faaae2e0af1">Transform</a>
+</li>
+<li>run()
+: <a class="el" href="classge211_1_1_abstract__game.html#a13a43e6d814de94978c515cb084873b1">Abstract_game</a>
+</li>
+</ul>
+
+
+<h3><a id="index_s"></a>- s -</h3><ul>
+<li>saturate()
+: <a class="el" href="structge211_1_1_color_1_1_h_s_l_a.html#a16f36e798afb386306fa624f531c1740">Color::HSLA</a>
+, <a class="el" href="structge211_1_1_color_1_1_h_s_v_a.html#a69f3feaddfbd60031d5599889794ed1f">Color::HSVA</a>
+, <a class="el" href="classge211_1_1_color.html#a72ca58b67920ea4263b3de46d69b047e">Color</a>
+</li>
+<li>scale()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#aee8adfbcf7f379e2563b8abe47ce2695">Transform</a>
+</li>
+<li>scale_x()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a6b0b704982ac34bfe41738a404df341a">Transform</a>
+</li>
+<li>scale_y()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a9dbe926dc876a1e74eecb6fb13c1c343">Transform</a>
+</li>
+<li>seconds()
+: <a class="el" href="classge211_1_1time_1_1_duration.html#a229c06dbdb7df3141ac5a8e791a56b4e">Duration</a>
+</li>
+<li>select_()
+: <a class="el" href="classge211_1_1sprites_1_1_multiplexed__sprite.html#a164814322d1873bd76ce5636a022e8e7">Multiplexed_sprite</a>
+</li>
+<li>set_dimensions()
+: <a class="el" href="classge211_1_1_window.html#a44951072d21ab9f7a314bce0aa994078">Window</a>
+</li>
+<li>set_flip_h()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a71640b05e5f7f7be2c8c0938a2cb310e">Transform</a>
+</li>
+<li>set_flip_v()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#aae21c76eafea1b72d5b0c3974b59deef">Transform</a>
+</li>
+<li>set_fullscreen()
+: <a class="el" href="classge211_1_1_window.html#a680e6cdc8539608bfbfa308e7a7317b0">Window</a>
+</li>
+<li>set_position()
+: <a class="el" href="classge211_1_1_window.html#ac6cc63cb8ce7e1891860d88844f41b47">Window</a>
+</li>
+<li>set_resizeable()
+: <a class="el" href="classge211_1_1_window.html#a17122bb835b848c464c9b5662b5134d6">Window</a>
+</li>
+<li>set_rotation()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#aa21d9396229f5cd5ce4ebd0c65407524">Transform</a>
+</li>
+<li>set_scale()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a6c2718c56e69ccac1f3113df64359d6d">Transform</a>
+</li>
+<li>set_scale_x()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a0c2553788d3f615bb25359b66e940a1a">Transform</a>
+</li>
+<li>set_scale_y()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a65a0f776840a2547dca4ece7858912a9">Transform</a>
+</li>
+<li>set_title()
+: <a class="el" href="classge211_1_1_window.html#a3da96287f3a4498fbade3e3ee42fdd7a">Window</a>
+</li>
+<li>shift()
+: <a class="el" href="classge211_1_1events_1_1_key.html#a3bca929f220b84eeb781517503af1035">Key</a>
+</li>
+<li>start_time()
+: <a class="el" href="classge211_1_1time_1_1_timer.html#a4ec0e15ff7f00c652d72fd3d19b98a03">Timer</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>Text_sprite()
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite.html#a9069441586bceae385e26f6e34925392">Text_sprite</a>
+</li>
+<li>Time_point()
+: <a class="el" href="classge211_1_1time_1_1_time__point.html#aa25d7ba306e2b697bab27904c8843d9f">Time_point</a>
+</li>
+<li>Timer()
+: <a class="el" href="classge211_1_1time_1_1_timer.html#a6a8bc5014802d569f6d01c4f36121a81">Timer</a>
+</li>
+<li>to_hsla()
+: <a class="el" href="classge211_1_1_color.html#a1e9a4e1c1d93c62313eabee4d0eb8932">Color</a>
+</li>
+<li>to_hsva()
+: <a class="el" href="classge211_1_1_color.html#af52fffd8be77988566263de454849cc6">Color</a>
+</li>
+<li>to_rgba()
+: <a class="el" href="structge211_1_1_color_1_1_h_s_l_a.html#abce5668827e54ce562b3d1c6964749af">Color::HSLA</a>
+, <a class="el" href="structge211_1_1_color_1_1_h_s_v_a.html#abce5668827e54ce562b3d1c6964749af">Color::HSVA</a>
+</li>
+<li>top_left()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#a6d7e08fc5420f8454ed7c9ad61c85c48">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>top_right()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__rectangle.html#a829bfb323b19134c099f832ece7ad840">Basic_rectangle&lt; T &gt;</a>
+</li>
+<li>Transform()
+: <a class="el" href="classge211_1_1geometry_1_1_transform.html#a581c712e9880a1899d51235f66fa3302">Transform</a>
+</li>
+<li>type()
+: <a class="el" href="classge211_1_1events_1_1_key.html#a7a5e549ca0b63ecd2f5e0057a7166358">Key</a>
+</li>
+</ul>
+
+
+<h3><a id="index_u"></a>- u -</h3><ul>
+<li>unpause()
+: <a class="el" href="classge211_1_1time_1_1_pausable__timer.html#a6fd97bf1a18da546553ee19b899309f7">Pausable_timer</a>
+</li>
+<li>up()
+: <a class="el" href="classge211_1_1events_1_1_key.html#a671e7122555c2611e559ceee7267f614">Key</a>
+</li>
+<li>up_by()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__position.html#a0d0b16b379663bdb6e4842a80df23942">Basic_position&lt; T &gt;</a>
+</li>
+<li>up_left_by()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__position.html#a57edd8cdb4ee2ef6cc087887bacdab5d">Basic_position&lt; T &gt;</a>
+</li>
+<li>up_right_by()
+: <a class="el" href="structge211_1_1geometry_1_1_basic__position.html#ad16fc061eb3596de177009acc6155c18">Basic_position&lt; T &gt;</a>
+</li>
+<li>up_to()
+: <a class="el" href="classge211_1_1_random.html#af6dbfa2117de44f65d3531dddd639413">Random</a>
+</li>
+</ul>
+
+
+<h3><a id="index_w"></a>- w -</h3><ul>
+<li>what()
+: <a class="el" href="classge211_1_1exceptions_1_1_exception__base.html#abf843cbb29dec939d0731e491bab6f70">Exception_base</a>
+</li>
+<li>white()
+: <a class="el" href="classge211_1_1_color.html#ad29bc29f61b7ab6e02d34de25050ad77">Color</a>
+</li>
+<li>word_wrap()
+: <a class="el" href="classge211_1_1sprites_1_1_text__sprite_1_1_builder.html#a4df5455bf040569acbf498928c92a917">Text_sprite::Builder</a>
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
 </body>
 </html>
