@@ -39,7 +39,8 @@ var hierarchy =
         ] ],
         [ "Image_sprite", "classge211_1_1sprites_1_1_image__sprite.html", null ],
         [ "Text_sprite", "classge211_1_1sprites_1_1_text__sprite.html", null ]
-      ] ]
+      ] ],
+      [ "Multiplexed_sprite", "classge211_1_1sprites_1_1_multiplexed__sprite.html", null ]
     ] ],
     [ "Sprite_set", "classge211_1_1_sprite__set.html", null ],
     [ "Time_point", "classge211_1_1time_1_1_time__point.html", null ],

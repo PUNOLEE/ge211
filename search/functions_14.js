@@ -19,7 +19,7 @@ var searchData=
   ['time',['time',['http://en.cppreference.com/w/cpp/chrono/c/time.html',1,'std']]],
   ['time_5fget',['time_get',['http://en.cppreference.com/w/cpp/locale/time_get/time_get.html',1,'std::time_get']]],
   ['time_5fget_5fbyname',['time_get_byname',['http://en.cppreference.com/w/cpp/locale/time_get_byname.html',1,'std::time_get_byname']]],
-  ['time_5fpoint',['time_point',['http://en.cppreference.com/w/cpp/chrono/time_point/time_point.html',1,'std::chrono::time_point::time_point()'],['../classge211_1_1time_1_1_time__point.html#aa25d7ba306e2b697bab27904c8843d9f',1,'ge211::time::Time_point::Time_point()']]],
+  ['time_5fpoint',['Time_point',['../classge211_1_1time_1_1_time__point.html#aa25d7ba306e2b697bab27904c8843d9f',1,'ge211::time::Time_point::Time_point()'],['http://en.cppreference.com/w/cpp/chrono/time_point/time_point.html',1,'std::chrono::time_point::time_point()']]],
   ['time_5fpoint_5fcast',['time_point_cast',['http://en.cppreference.com/w/cpp/chrono/time_point/time_point_cast.html',1,'std::chrono']]],
   ['time_5fput',['time_put',['http://en.cppreference.com/w/cpp/locale/time_put/time_put.html',1,'std::time_put']]],
   ['time_5fput_5fbyname',['time_put_byname',['http://en.cppreference.com/w/cpp/locale/time_put_byname.html',1,'std::time_put_byname']]],
